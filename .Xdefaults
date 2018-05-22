@@ -1,0 +1,91 @@
+xterm*Background:       black
+xterm*Foreground:        green
+xterm*cursorColor:      LightBlue
+xterm*visualBell: false
+
+ ! General
+! urxvt*termName:  rxvt-256color
+ urxvt*loginShell:         true
+ urxvt*scrollBar:         false
+ urxvt*secondaryScroll:    true
+ urxvt*saveLines:         65535
+ urxvt*cursorBlink:       false
+ urxvt*urgentOnBell:       true
+ urxvt*fontMenu.Label:  Unicode Fonts
+ urxvt*utf8:    1
+ !urxvt*font2:  -misc-fixed-medium-r-normal--8-80-75-75-c-50-iso10646-1
+ !urxvt*font:   -misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso10646-1
+ !urxvt*font3:  -misc-fixed-medium-r-normal--14-130-75-75-c-70-iso10646-1
+ !urxvt*font4:  -misc-fixed-medium-r-normal--13-120-75-75-c-80-iso10646-1
+ !urxvt*font5:  -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+ !urxvt*font6:  -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso10646-1
+ !urxvt*override-redirect:false
+ !urxvt*borderLess:       false
+ !urxvt*internalBorder:       0
+ !urxvt*externalBorder:       0
+
+urxvt.font: xft:Inconsolata:size=10
+
+ ! Extensions
+ urxvt*perl-lib:        /usr/lib/urxvt/perl/
+ urxvt*perl-ext-common: default,matcher,searchable-scrollback,resize-font
+ urxvt*urlLauncher:     /usr/bin/firefox
+ urxvt*matcher.button:  1
+
+ !  - catch ugly URLs
+ urxvt.cutchars:        `()'*<>[]{|}"
+ urxvt.perl-ext-common: ...,tabbed,resize-font,...
+
+ !  - color scheme
+ ! urxvt.background:  #000000
+ ! urxvt.foreground:  green
+ ! ! black + red
+ ! !urxvt*color0:     #3f3f3f
+ ! urxvt*color0:      #000000
+ ! urxvt*color1:      #e01010
+ ! ! green + yellow
+ ! urxvt*color2:      #00AA00
+ ! urxvt*color3:      #FFFF00
+ ! ! blue + purple
+ ! urxvt*color4:      #112037
+ ! urxvt*color5:      #A020F0
+ ! ! cyan + white
+ ! urxvt*color6:      #5B5BC7
+ ! urxvt*color7:      #fefefe
+ ! ! bright-black + bright-red
+ ! urxvt*color8:      #6a6a6a
+ ! urxvt*color9:      #FF5555
+ ! ! bright-green + bright-yellow
+ ! urxvt*color10:     #90EE90
+ ! urxvt*color11:     #ffff2f
+ ! ! bright-blue + bright-purple
+ ! urxvt*color12:     #5B5BC7
+ ! urxvt*color13:     #e628ba
+ ! ! bright-cyan + bright-white
+ ! urxvt*color14:     #7D7DFB
+ ! urxvt*color15:     #ffffff
+
+! URxvt*termName: rxvt-256color
+URxvt*xftAntialias: true
+URxvt*background: #3f3f3f
+URxvt*foreground: #dcdccc
+URxvt*cursorColor: #aaaaaa
+!URxvt*colorUL: #366060
+URxvt*colorUL: #669090
+URxvt*underlineColor: #dfaf8f
+URxvt*color0: #3f3f3f
+URxvt*color1: #cc9393
+URxvt*color2: #7f9f7f
+URxvt*color3: #d0bf8f
+URxvt*color4: #6ca0a3
+URxvt*color5: #dc8cc3
+URxvt*color6: #93e0e3
+URxvt*color7: #dcdccc
+URxvt*color8: #000000
+URxvt*color9: #dca3a3
+URxvt*color10: #bfebbf
+URxvt*color11: #f0dfaf
+URxvt*color12: #8cd0d3
+URxvt*color13: #dc8cc3
+URxvt*color14: #93e0e3
+URxvt*color15: #ffffff

@@ -1,0 +1,17 @@
+#!/bin/bash
+cat <<EOF >> ~/.updateMonitors.log
+====== $(date) ======
+$*
+$(xrandr --listmonitors)
+EOF
+#killall compton
+EXT_MON=$(xrandr --listmonitors | grep -v eDP-1 | grep 'DP-' | cut -f 3 -d ' ' | cut -f 2 -d '+')
+if ! xrandr --output eDP-1 --mode 3840x2160 --output $EXT_MON --mode 2560x1440 --scale 1.5x1.5 --same-as eDP-1; then
+    xrandr --output eDP-1 --mode 3840x2160
+fi
+#compton --backend glx &
+
+#xinput --set-prop 14 'libinput Accel Speed' 0.5
+#xinput --set-prop 14 'libinput Accel Profile Enabled' 0, -1
+
+# compton --backend glx -b -d :0 --vsync opengl
